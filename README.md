@@ -1,2 +1,2 @@
-# WARG-Human-Vision-V2
+# WARG-Human-Vision
 Continuation of human vision software using Electron
