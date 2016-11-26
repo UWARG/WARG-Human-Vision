@@ -1,2 +1,16 @@
-node_modules/
 npm-debug.log
+node_modules/
+cache/
+logs/
+docs/
+coverage/
+
+Thumbs.db
+
+*.log
+
+#due to some git file
+warggroundstation
+
+#webstorm stuff
+.idea

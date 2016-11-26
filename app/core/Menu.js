@@ -54,7 +54,8 @@ var Menu = {
       openWindow: 'console',
       width: 900,
       height: 500,
-      shortcut: 'CmdOrCtrl+Shift+C'
+      shortcut: 'CmdOrCtrl+Shift+C',
+      devTools: true
     }
   },
   'Settings': {

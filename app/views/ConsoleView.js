@@ -19,7 +19,6 @@
 var remote = require('electron').remote;
 var Template = require('../util/Template');
 var Logger = remote.require('./app/util/Logger');
-var Commands = remote.require('./app/models/Commands');
 var advanced_config = remote.require('./config/advanced-config');
 
 module.exports = function (Marionette) {
@@ -198,14 +197,7 @@ module.exports = function (Marionette) {
       this.checkMaxConsoleMessages();
     },
     sendCommand: function (e) {
-      if (e) e.preventDefault();
-      var command = this.ui.command_input.val();
-      if (command && command.trim()) {
-        Commands.sendRawCommand(command.trim());
-        this.ui.command_input.val('');
-        this.command_history.push(command.trim());
-        this.command_history_index = 0;
-      }
+      
     },
     cycleCommandHistory: function (e) {
       if (e.keyCode === 38) { //keyup
