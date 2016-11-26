@@ -6,11 +6,11 @@ rm -rf ./docs
 
 jsdoc -c jsdoc.json
 
-cd docs/WARG-Ground-Station/$VERSION
+cd docs/WARG-Human-Vision/$VERSION
 
 git init
 
-git remote add origin git@github.com:UWARG/WARG-Ground-Station.git
+git remote add origin git@github.com:UWARG/WARG-Human-Vision.git
 
 git add .
 
